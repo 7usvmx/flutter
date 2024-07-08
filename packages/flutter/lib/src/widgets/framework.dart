@@ -5491,7 +5491,7 @@ abstract class ComponentElement extends Element {
       }());
       debugWidgetBuilderValue(widget, built);
     } catch (e, stack) {
-      _debugDoingBuild = false;
+    _debugDoingBuild = false;
       built = ErrorWidget.builder(
         _reportException(
           ErrorDescription('building $this'),
